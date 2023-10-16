@@ -1,0 +1,120 @@
+@font-face{   /*Anexa a fonte de fora, exige no min 2 atributos, source e font family*/
+    font-family: BLOODY;
+    src: url(../fontes/fontBloody/BLOODY.TTF);
+/*otf, ttf identificam arquivos de fontes*/
+}
+
+@font-face{
+    font-family:YoungSerif-Regular ;
+    src: url(../fontes/fontYoungSerifRegular/YoungSerif-Regular.ttf);
+    font-weight: normal; 
+    /*Controla o peso da fonte, bold,light, ... em casos em que a fonte vem com os tamanhos configurados, precisa selecionar cada arquivo 1 por 1.*/
+}
+
+/*Keyframe, uma animação que acontece quando se muda de um css para outro;*/
+/*Coloca por porcentagem a instrução; Aceita 1% por 1%, mas pode fazer de 10 em 10*/
+@keyframes mudaCor{
+    0%{
+        background-color: rgb(0, 140, 255);
+        margin-left: 20px;
+    }
+    10%{
+        background-color: blue;
+        margin-left:50px;
+    }
+    20%{
+        background-color: rgb(3, 2, 63);
+        width: 300px;
+        margin-left: 70px;
+    }
+    30%{
+        background-color: rgb(24, 2, 77);
+        width: 600px;
+        margin-left: 90px;
+    }
+    40%{
+        background-color: rgb(122, 4, 190);
+        width: 300px;
+        margin-left: 110px;
+    }
+    50%{
+        background-color: rgb(165, 94, 245);
+        width: 600px; /*Controla a expansão da imagem, adiciona movimento*/
+        margin-left: 130px;
+    }
+    60%{
+        background-color: rgb(194, 126, 240);
+    }
+    70%{
+        background-color: rgb(225, 120, 235);
+    }
+    80%{
+        background-color: rgb(240, 170, 247);
+    }
+    90%{
+        background-color: rgb(197, 61, 209);
+    }
+    100%{
+        background-color: rgb(189, 38, 176);
+    }
+ 
+}
+
+@keyframes mudaBackground{
+    0%{
+        background-image: url(../imagens/hallowenLandscape.jpg);
+        transition: 1s;
+    }
+    33%{
+        background-image: url(../imagens/halloween-21498_1280.jpg);
+        transition: 1s;
+    }
+    66%{
+        background-image: url(../imagens/fundo.jpg);
+        transition: 1s;
+    }
+    100%{
+        background-image: url(../imagens/hallowenLandscape.jpg);
+        transition: 1s;
+    }
+}
+
+h3{
+    font-family: BLOODY;
+}
+
+
+*{
+    margin:0%;
+    padding: 0%;
+    font-family: YoungSerif-Regular;
+    font-weight: normal;
+}
+
+   
+
+#caixaCor{
+    /*Animação*/
+    width: 500px;
+    height: 500px;
+    background-color: rgb(42, 136, 165);
+    animation-name: mudaCor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+
+}
+
+#caixaImagem{
+    background-image: url(../imagens/hallowenLandscape.jpg);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    animation: mudaBackground 5s infinite;
+    /*animation-duration: 5s;*/
+    /*animation-iteration-count: infinite;*/
+    
+
+
+}
