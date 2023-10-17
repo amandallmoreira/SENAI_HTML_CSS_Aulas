@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Aula 09 - Formulários</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/geral.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>FORMULÁRIO</h1>
+    <!--iNPUTS-->
+    <h3>Cadastro:</h3> <br>
+    <form action="cadastrar.php" method="post">
+
+        <!--GET, PEGA AS INFORMAÇÕES, COLOCA NA URL, MANDA PRO SERVIDOR-->
+        <!--POST, PEGA AS INFORMAÇÕES, MANDA PRO SERVIDOR-->
+
+        <label for="nome">Nome:</label> <!-- Label, dá o nome para o Input-->
+        <input type="text" id="nome" placeholder="Digite aqui">
+        <!--Text - texto normal-->
+
+        <label for="senha">Senha:</label> 
+        <input type="password" id="senha" placeholder="Digite a sua senha"> 
+        <!--Password - para senhas-->
+        
+        <!--SUBMMIT - ENVIA-->
+        <!--RESET - APAGA OS INPUTS-->
+        <!--MENU - BOTÃO PARA MENUS-->
+        <!--BUTTON - BOTÃO SEM AÇÃO-->
+
+        <label for="email">Email:</label> 
+        <input type="email" id="email" placeholder="Digite e-mail">
+        <!-- Email - aceita apenas email, exige o @-->
+        
+        
+        <label for="nascimento">Data de Nascimento:</label> 
+        <input type="date" id="nascimento"> 
+        <!--DATE, APRESENTA UM CALENDARIO-->
+
+        <label for="hora">Hora de Nascimento:</label> 
+        <input type="time" id="hora" placeholder="hora">
+        <!--TIME, PARA HORAS-->
+
+        <label for="idade">Idade:</label> 
+        <input type="number" id="idade" step="1" min="18" max="99" placeholder="idade">
+        <!-- NUMBER, PERMITE MIN E MAX, MAXLENGHT (NUMERO MAX DE CARACTERES)-->
+
+        <label for="cor">Cor:</label>
+        <input type="color" id="cor">
+        <!--COLOR, SELECIONA COR-->
+
+        <label for="imagem">Adicione sua foto de perfil:</label>
+        <input type="file" id="imagem">
+
+        <!--FILE, SELECIONA UM ARQUIVO, IMAGEM, ...-->
+        <label for="mandaEmail">Deseja receber notificações via e-mail?</label>
+        <fieldset>
+        Sim<input type="checkbox" id="mandaEmail" >
+        Não<input type="checkbox" id="mandaEmail" >
+        </fieldset>
+        <!--CHECKBOX, PERMITE MARCAR APENAS UMA OPÇÃO-->
+
+        <label for="genero">Qual é o seu gênero?</label>
+        <fieldset>
+        Homem<input type="radio"  name="genero" value="homem" >
+        Mulher<input type="radio" name="genero" value="mulher" >
+        Não dizer<input type="radio" name="genero" value="naoDizer" >
+        </fieldset>
+        <!--RADIO, PERMITE MARCAR MAIS DE UMA OPÇÃO, MAS PODE MARCAR APENAS UMA TAMBÉM-->
+
+        <!--SELECT, VARIAS OPÇÕES, em lista-->
+        <label for="estado">Selecione o Estado onde mora:</label>
+        <select name="estado" id="estado">
+            <option value="">Distrito Federal - DF</option>
+            <option value="">Acre - AC</option>
+            <option value="">São Paulo - SP</option>
+            <option value="">Rio de Janeiro - RJ</option>
+            <option value="">Alagoas - AL</option>
+            <option value="">Minas Gerais - MG</option>
+            <option value="">Bahia - BA</option>
+        </select>
+
+        <!--TEXTAREA,AREA DE TEXTO, CAIXA DE TEXTO-->  
+        <!--MAXLENGTH CONTROLA O MAX DE CARACTERES PERMITIDOS-->  
+        <label for="info"> Insira aqui demais informações. </label>
+        <textarea name="info" id="info" cols="30" rows="5" maxlength="10" style="resize: none;" placeholder="Digite aqui"></textarea>
+
+       
+        
+        
+        <button type="submit"> Cadastrar </button> 
+        <button type="reset"> Refazer Formulário </button> 
+        
+        
+    </form>
+</body>
+</html>
