@@ -1,0 +1,152 @@
+@keyframes cor {
+    0%{
+        border: 5px solid rgb(107, 203, 241);
+        transition: 0,5s;
+    }
+    50%{
+        border: 5px solid rgb(34, 105, 133);
+        transition: 0,5s;
+    }
+    100%{
+        border: 5px solid rgb(4, 49, 66);
+        transition: 0,5s;
+    }
+    /*Cria uma borda que muda de cor em volta da caixa de input*/
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#pagina{
+    width: 100%;
+    height: 100vh; /*VH viewport height*/
+    background-color: rgb(201, 200, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /*para não amassar a imagem*/
+}
+
+main{
+    width: 70%;
+    height: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-style: inset;
+    display: flex;
+    overflow: hidden;
+}
+
+#banner, #formulario{
+    /* PRECIDA DA , */
+    width: 50%;
+    height: 100%;
+    
+}
+
+#banner{
+    background-image: url(../images/source-4280758_640.jpg);
+    background-size: cover;
+    
+}
+
+#efeito{
+    /*OPACIDADE*/
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(201, 200, 200, 0.521);}*/
+    background: white;
+    background: linear-gradient(87deg, rgba(88, 81, 81, 0.548) 53%, rgba(255,255,255,1) 90%);
+    /*gradiente, com imagem e transparencia*/
+}
+
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2{
+    color:rgb(8, 2, 59);
+    margin: 20px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15pt;
+    
+}
+
+input{
+    width: 320px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+input:hover{
+    transition: 0,5s;
+    background-color: rgb(218, 98, 18);
+
+}
+
+
+input:focus{
+    /*: abre uma pseudo classe*/
+    width: 400px;
+    height: 40px;
+    background-color: rgb(248, 216, 194);
+    transition: 1s;
+    animation: cor 5s infinite;
+    
+}
+
+ 
+input::placeholder{
+    text-align: center;
+    color:blue;
+
+    
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    margin: 10px auto;
+    background-color: rgb(201, 200, 200);
+    border-radius: 5px;
+  
+}
+
+button:active{
+    background-color: rgb(201, 200, 200);
+    color: red;
+
+}
+
+button:hover{
+    width: 250px;
+    height: 35px;
+    background-color: rgb(34, 105, 133);
+    font-weight: bold;
+    transition: 0,5s;
+
+}
+
+
+   
+    
+
+
+
+
+    
