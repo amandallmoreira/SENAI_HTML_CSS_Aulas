@@ -6,9 +6,24 @@
     <title>Aula 09 - Formulários</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../styles/formulario.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../styles/geral.css'>
     <script src='main.js'></script>
 </head>
 <body>
+    <header>
+        <div id="logo">
+            <img src="../images/icon.jpg">
+        </div>
+        <nav>
+            <a href="../pages/home.html">Home</a>
+            <a href="#">Contatos</a> 
+            <a href="../pages/formulario.html">Formulário</a> 
+            <a href="#">Seu Perfil</a>
+            <a href="../index.html">Login</a>
+        
+        </nav>
+    </header>
+
     <h1>FORMULÁRIO</h1>
     <!--iNPUTS-->
     <h3>Cadastro:</h3> <br>
@@ -57,16 +72,18 @@
         <!--FILE, SELECIONA UM ARQUIVO, IMAGEM, ...-->
         <label for="mandaEmail">Deseja receber notificações via e-mail?</label>
         <fieldset>
-        Sim<input type="checkbox" id="mandaEmail" >
-        Não<input type="checkbox" id="mandaEmail" >
+            <p class="opcao"> Sim<input type="checkbox" id="mandaEmail" ></p>
+            <p class="opcao"> Não<input type="checkbox" id="mandaEmail" ></p>
+           
         </fieldset>
         <!--CHECKBOX, PERMITE MARCAR APENAS UMA OPÇÃO-->
 
         <label for="genero">Qual é o seu gênero?</label>
         <fieldset>
-        Homem<input type="radio"  name="genero" value="homem" >
-        Mulher<input type="radio" name="genero" value="mulher" >
-        Não dizer<input type="radio" name="genero" value="naoDizer" >
+            <p class="opcao">Homem<input type="radio"  name="genero" value="homem" ></p>
+            <p class="opcao">Mulher<input type="radio" name="genero" value="mulher" ></p>
+            <p class="opcao"> Não dizer<input type="radio" name="genero" value="naoDizer" ></p>
+        
         </fieldset>
         <!--RADIO, PERMITE MARCAR MAIS DE UMA OPÇÃO, MAS PODE MARCAR APENAS UMA TAMBÉM-->
 
