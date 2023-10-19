@@ -1,0 +1,80 @@
+@keyframes{
+
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+h1{
+    margin:40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    /*border: 2px solid black;*/
+    /*Tabela tem COLLAPSE como padrão, divide as bordas, se mandar colapsar ela grupa dos elementos e forma uma grid*/
+    border-collapse: collapse;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    font-size: 40px;
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th:empty{
+    border:none;
+    background-color: transparent;
+}
+
+th:hover{
+    background-color: greenyellow;
+}
+
+th:active, td:active{
+    background-color: green;
+    color: greenyellow;
+    border: 2px solid green;
+}
+
+th, td{
+    border: 2px solid blue;
+    background-color: rgb(0, 81, 255);
+    padding: 10px;
+    
+}
+ 
+td{
+    background-color:rgb(179, 215, 245);
+}
+
+h3{
+    margin:40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+
+#tabelaAlunos{
+    width: 700px;
+    height: auto;
+}
+
+#tabelaAlunos td, #tabelaAlunos th{
+    height: 40px ;
+
+}
+
+#scroll{
+    width: 30px;
+    height: 3000px;
+    background-color: blueviolet;
+}
+
+thead{
+    top: -1px;
+    position: sticky;
+}
