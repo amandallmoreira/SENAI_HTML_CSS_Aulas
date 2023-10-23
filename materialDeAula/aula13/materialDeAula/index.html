@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Aula 13 - Responsividade</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/geral.css'>
+    <link rel='stylesheet' type='text/css' media='screen and (max-width : 768px)' href='styles/@media.css'>
+    <link rel='stylesheet' type='text/css' media='screen and (orientation: landscape)' href='styles/landscape.css'>
+    <link rel='stylesheet' type='text/css' media='screen and (orientation: portrait)' href='styles/portrait.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="pagina">
+        <header>
+            <div id="logo">
+                <img src="images/IMG-20231017-WA0007.jpg" alt="logo HelpA" >
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Atividade</a></li>
+                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+
+                </ul>
+            </nav>
+
+            <!--MOBILE-->
+            <div id="menuMobile">
+                <img src="images/menuIcon.svg" alt="icone">
+
+                <!--SVG é mais facil de editar, se abrir o arquivo SVG e adicionr fill= + a cor que você quer, ele muda de cor-->
+                <!--Transformar a imagem em um button-->
+            </div>
+        </header>
+        <main>
+            <picture>
+                    <!--Funciona como um SE, SENÃO-->
+                <source srcset="images/cropComputador.png" media="screen and (max-width: 768px)">    <!--Aqui cabe a imagem menor-->
+                <img src="images/menina-com-um-laptop.jpg" alt="Mulher com um laptop, na grama verde.">
+            </picture>
+           
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque modi magnam hic labore asperiores dolor expedita maiores excepturi nostrum aut nesciunt omnis sint aliquid blanditiis, iusto adipisci dolores dolore voluptatibus.</p>
+
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
