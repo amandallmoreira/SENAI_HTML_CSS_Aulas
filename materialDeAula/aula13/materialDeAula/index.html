@@ -17,25 +17,38 @@
             <div id="logo">
                 <img src="images/IMG-20231017-WA0007.jpg" alt="logo HelpA" >
             </div>
-            <nav>
+            <nav id="opcoesPc">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Atividade</a></li>
-                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#">Planos</a></li>
                     <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contatos</a></li>
                     <li><a href="#">Fale Conosco</a></li>
 
                 </ul>
             </nav>
 
             <!--MOBILE-->
-            <div id="menuMobile">
+            <div id="menuMobile" onclick="abrirOpcoes()">
                 <img src="images/menuIcon.svg" alt="icone">
 
                 <!--SVG é mais facil de editar, se abrir o arquivo SVG e adicionr fill= + a cor que você quer, ele muda de cor-->
                 <!--Transformar a imagem em um button-->
             </div>
         </header>
+        <!--MENU MOBILE-->
+            <nav id="opcoesMobile">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Planos</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+
+                </ul>
+            </nav>
+         <!--FIM MENU MOBILE-->
+
         <main>
             <picture>
                     <!--Funciona como um SE, SENÃO-->
@@ -43,12 +56,53 @@
                 <img src="images/menina-com-um-laptop.jpg" alt="Mulher com um laptop, na grama verde.">
             </picture>
            
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque modi magnam hic labore asperiores dolor expedita maiores excepturi nostrum aut nesciunt omnis sint aliquid blanditiis, iusto adipisci dolores dolore voluptatibus.</p>
+            
+            <div id="formulario">
+                <h2>Cadastro de usuário</h2>
+                <form>
+                    <label for="nome">Digite o nome do usuário:</label>
+                    <input type="text" id="nome" placeholder="Usuario">
 
+                    <label for="email">Digite o seu e-mail:</label>
+                    <input type="email" id="email" placeholder="Email">
+
+                    <label for="senha">Digite sua senha:</label>
+                    <input type="password" id="senha" placeholder="Digite aqui">
+
+                    <label for="repitaSenha">Digite sua senha novamente:</label>
+                    <input type="password" id="repitaSenha" placeholder="Digite aqui">
+
+
+                
+                    <p>Esqueci minha senha! <a id="esqueciSenha" href="pages/novaSenha.html">Clique aqui!</a></p> 
+                    <p>Não possuo cadastro!
+                    <a id="naoCadastrado" href="pages/novoCadastro.html">Fazer cadastro.</a> </p>
+                    
+                    
+                    
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>    
         </main>
         <footer>
 
         </footer>
     </div>
+
+    <!--JAVASCRIPT-->
+    <script>
+        function abrirOpcoes(){
+            if (opcoesMobile.style.display=='none'){
+                opcoesMobile.style.display='flex'
+                //Se o menu mobile estiver escondido então mostrar o Icone;/ = atribuição, ==comparação
+            }else{
+                opcoesMobile.style.display='none'
+                //Caso contrário não mostre o Icone.
+            }
+        }
+        
+
+    </script>
 </body>
 </html>
