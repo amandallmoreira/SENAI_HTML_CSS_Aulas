@@ -1,0 +1,91 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#banner{
+    width: 80%;
+    height: 500px;
+    background-color: blueviolet;
+    background-image: url(../images/salario-familia.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#formulario{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    padding: 20px;
+
+   
+
+  
+}
+
+
+
+form{
+    width:80%;    
+
+}
+
+input{
+    width: 100%;
+    height:30px;
+    border: none;
+    border-bottom: 2px solid grey;
+    margin:20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+table{
+    border-collapse: collapse; /*Junta as linhas das colunas e linhas*/
+    border: 1px solid grey;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    font-size: 40px;
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+th, td{
+    border: 1px solid grey;
+    padding: 10px;
+    
+}
+ 
+button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    box-shadow: 20px grey;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 30px;
+}
