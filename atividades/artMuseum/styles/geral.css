@@ -1,0 +1,129 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Roboto';
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Bebas Neue', sans-serif;
+   
+}
+
+#pagina, header,footer, main,#galeria{
+    width: 100%;
+    display: flex;
+}
+
+#pagina{
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    height: 80px;
+    background-color: black;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+li a{
+    text-decoration: none;
+    color:white;
+}
+
+/*FIM CABEÇALHO*/
+
+/*CONTEUDO*/
+
+main{
+    padding:20px 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+hr{
+    width: 40%;
+    border: 2px solid #F5124B;
+}
+
+/*FIM CONTEUDO*/
+
+
+
+#destaque{
+    width: 60%;
+    padding: 20px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+#destaque p{
+    color:#2A2B2A;
+}
+
+button{
+    width: 80px;
+    padding: 5px;
+    background-color: #F5124B;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.imagem{
+    width: 100%;
+}
+
+#galeria{
+    margin: 30px;
+    gap: 10px;
+    display: flex;
+    text-align: center;
+    justify-items: center;
+
+}
+
+.pintura{
+    width: 300px;
+    padding: 20px;
+    background-color: #2a2b2a7c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+}
+
+
+footer{
+    height: 60px;
+    background-color: #2A2B2A;
+}
