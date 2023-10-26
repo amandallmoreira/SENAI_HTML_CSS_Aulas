@@ -1,0 +1,32 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p, li a{
+    color:white;
+
+
+}
+
+#pagina, header, main, footer{
+    background-color: black;
+    display: flex;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+ul li{
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
