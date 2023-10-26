@@ -32,6 +32,8 @@ header{
     color: white;
 }
 
+
+
 nav{
     height: 100%;
     display: flex;
@@ -51,6 +53,24 @@ li a{
     color:white;
 }
 
+#menuIcon{
+    width: 60px;
+    height: 60px;
+    cursor:pointer; 
+    transition: 0,5s;
+    display: none;
+}
+
+#menuIcon:hover{
+    box-shadow: 5px 5px 5px white;
+    
+}
+
+#menuMobile{
+    display: none;
+    
+}
+
 /*FIM CABEÇALHO*/
 
 /*CONTEUDO*/
@@ -66,6 +86,8 @@ hr{
     width: 40%;
     border: 2px solid #F5124B;
 }
+
+
 
 /*FIM CONTEUDO*/
 
@@ -101,26 +123,33 @@ button{
 }
 
 #galeria{
-    margin: 30px;
-    gap: 10px;
-    display: flex;
-    text-align: center;
-    justify-items: center;
+    margin:20px 0px;
+    gap: 20px;
+    justify-content: center; /*Content é para grupo*/
+    flex-wrap: wrap;
 
 }
+
+#textoPagina{
+    width: 80%;
+    margin: 20px 0px;
+    text-align: center;
+}
+
 
 .pintura{
     width: 300px;
     padding: 20px;
-    background-color: #2a2b2a7c;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     gap: 10px;
     border: 1px solid gray;
     border-radius: 5px;
 
 }
+
+
 
 
 footer{

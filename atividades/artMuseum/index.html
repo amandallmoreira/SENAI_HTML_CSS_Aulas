@@ -6,6 +6,8 @@
     <title> Correção - Art Museum</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/geral.css'>
+    <link rel='stylesheet' type='text/css' media='screen and (max-width: 768px)' href='styles/@Media.css'>
+
     <script src='main.js'></script>
 </head>
 <body>
@@ -21,16 +23,32 @@
                     <li><a href="#">Contato</a></li> 
                 </ul>
             </nav>
-        </header>
 
+            <div id="menuIcon" onclick="abrirMenu()">
+                <img class="imagem"  src="images/menuIcon.svg" alt="">
+            </div>
+        </header>
+             
+            <nav id="menuMobile">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Contato</a></li> 
+                </ul>
+            </nav>
+            
         <main>
             <h3>Destaque da semana</h3>
             <hr>
             
             <div id="destaque">
                 <h4>Elizabeth</h4>
-                <img class="imagem" src="images/elizabeth.jpg" alt="">
-            
+                <picture>
+                    <source class="imagem" srcset="images/elizabethMenor.png" media="screen and (max-width:768px)">
+                    <source class="imagem" srcset="images/elizabethLandscape.png" media="screen and (orientation:landscape) and (max-height:500px)">
+                    <img class="imagem" src="images/elizabeth.jpg" alt="">
+                </picture>
+
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dicta cumque obcaecati. Officia dolor ipsum soluta, omnis laborum asperiores eveniet in tenetur. Nobis corrupti architecto officiis nesciunt vitae velit minima?</p>
                 <button type="button">Ver Sobre</button>
 
@@ -74,6 +92,16 @@
 
 
     </footer>
+
+    <script>
+        function abrirMenu(){
+            if(menuMobile.style.display=="none"){
+                menuMobile.style.display="flex";
+            }else{
+                menuMobile.style.display="none"; /*Define ordem de comandos*/
+            }
+        }
+    </script>
 
 
    
